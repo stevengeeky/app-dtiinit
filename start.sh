@@ -4,8 +4,10 @@
 if [ -z $SERVICE_DIR ]; then export SERVICE_DIR=`pwd`; fi
 if [ -z $ENV ]; then export ENV=IUHPC; fi
 
-#clean up previous job (just in case)
-rm -f finished
+#rm -f finished
+
+# Steven's code
+cp ~/dtiinit.tar.gz && tar -xf dtiinit.tar.gz && rm dtiinit.tar.gz
 
 if [ $ENV == "IUHPC" ]; then
 
