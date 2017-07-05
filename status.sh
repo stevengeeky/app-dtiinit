@@ -6,16 +6,16 @@
 
 ##now wait for running to go away
 
-if [ -f finished ]; then
-    code=`cat finished`
-    if [ $code -eq 0 ]; then
-        echo "finished successfully"
-        exit 1 #success!
-    else
-        echo "finished with code:$code"
-        exit 2 #failed
-    fi
-fi
+# if [ -f finished ]; then
+#     code=`cat finished`
+#     if [ $code -eq 0 ]; then
+#         echo "finished successfully"
+#         exit 1 #success!
+#     else
+#         echo "finished with code:$code"
+#         exit 2 #failed
+#     fi
+# fi
 
 # if [ -f jobid ]; then
 #     jobid=`cat jobid`
@@ -54,6 +54,9 @@ fi
 #     exit 0
 # fi
 
-echo "copied files not found"
-exit 3
+# echo "copied files not found"
+# exit 3
 
+
+# Smooth sailing
+exit 1
