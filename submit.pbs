@@ -3,19 +3,19 @@
 #PBS -N app-dtiinit
 #PBS -V
 
-if [ $ENV == "IUHPC" ]; then
+# if [ $ENV == "IUHPC" ]; then
 
-    cd $PBS_O_WORKDIR
+#     cd $PBS_O_WORKDIR
 
-    module load matlab
-    module load spm
-    module load fsl
-fi
+#     module load matlab
+#     module load spm
+#     module load fsl
+# fi
 
-export MATLABPATH=$MATLABPATH:$SERVICE_DIR
-matlab -nodisplay -nosplash -r main
+# export MATLABPATH=$MATLABPATH:$SERVICE_DIR
+# matlab -nodisplay -nosplash -r main
 
-#matlab doesn't set return code properly.. let's check for output file 
+# #matlab doesn't set return code properly.. let's check for output file 
 if [ -s dti_trilin/dt6.mat ];
 then
     #normalize output file in case the input file wasn't named dwi.nii.gz
