@@ -9,6 +9,8 @@ if [ -z $ENV ]; then export ENV=IUHPC; fi
 # Steven's code
 cp ~/dtiinit.tar.gz ./ && tar -xf dtiinit.tar.gz && rm dtiinit.tar.gz
 
+echo $ENV > testing
+
 if [ $ENV == "IUHPC" ]; then
 
     jobid=`qsub $SERVICE_DIR/submit.pbs`
