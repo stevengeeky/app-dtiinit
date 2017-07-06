@@ -7,7 +7,7 @@ if [ -z $ENV ]; then export ENV=IUHPC; fi
 #rm -f finished
 
 # Steven's code
-cp ~/dtiinit.tar.gz ./ && tar -xf dtiinit.tar.gz && rm dtiinit.tar.gz
+cp ~/dtiinit2.tar.gz ./ && tar -xf dtiinit2.tar.gz && rm dtiinit2.tar.gz
 
 if [ $ENV == "IUHPC" ]; then
 
